@@ -1,15 +1,13 @@
 cryptography<3.4
-django
+django<4
 djangocms-admin-style
 django-apptemplates
 django-cms>=3.9,<4
 djangocms-admin-style
 django-treebeard
-djangocms-bootstrap4
+djangocms-frontend[djangocms-icon]
 djangocms-file
 djangocms-googlemap
-djangocms-icon
-djangocms-link
 djangocms-picture
 djangocms-snippet
 djangocms-style

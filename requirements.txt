@@ -4,181 +4,214 @@
 #
 #    pip-compile
 #
-asgiref==3.4.1
+--trusted-host pypi.python.org
+--trusted-host pypi.org
+--trusted-host files.pythonhosted.org
+
+asgiref==3.5.2
     # via django
-boto3==1.17.109
+boto3==1.24.93
     # via django-storages
-botocore==1.20.109
+botocore==1.27.93
     # via
     #   boto3
     #   s3transfer
-cffi==1.14.5
+build==0.8.0
+    # via pip-tools
+cffi==1.15.1
     # via cryptography
-click==8.0.1
+click==8.1.3
     # via pip-tools
 cryptography==3.3.2
     # via -r requirements.in
-django==3.2.5
+cssselect2==0.7.0
+    # via svglib
+django==3.2.16
     # via
     #   -r requirements.in
+    #   django-appconf
     #   django-classy-tags
     #   django-cms
     #   django-debug-toolbar
+    #   django-entangled
     #   django-extensions
     #   django-filer
     #   django-formtools
-    #   django-mptt
+    #   django-js-asset
     #   django-polymorphic
     #   django-sekizai
+    #   django-select2
     #   django-storages
     #   django-treebeard
+    #   djangocms-frontend
     #   easy-thumbnails
+django-appconf==1.0.5
+    # via django-select2
 django-apptemplates==1.5
     # via -r requirements.in
-django-classy-tags==2.0.0
+django-classy-tags==3.0.1
     # via
     #   django-cms
     #   django-sekizai
-django-cms==3.9.0
+django-cms==3.11.0
     # via
     #   -r requirements.in
     #   djangocms-attributes-field
-    #   djangocms-bootstrap4
     #   djangocms-file
+    #   djangocms-frontend
     #   djangocms-googlemap
     #   djangocms-icon
-    #   djangocms-link
     #   djangocms-picture
     #   djangocms-snippet
     #   djangocms-style
     #   djangocms-text-ckeditor
     #   djangocms-transfer
     #   djangocms-video
-django-debug-toolbar==3.2.1
+django-debug-toolbar==3.7.0
     # via -r requirements.in
-django-extensions==3.1.3
+django-entangled==0.4
+    # via djangocms-frontend
+django-extensions==3.2.1
     # via -r requirements.in
-django-filer==2.0.2
+django-filer==2.2.3
     # via
     #   -r requirements.in
-    #   djangocms-bootstrap4
     #   djangocms-file
+    #   djangocms-frontend
     #   djangocms-googlemap
-    #   djangocms-link
     #   djangocms-picture
     #   djangocms-video
-django-formtools==2.3
+django-formtools==2.4
     # via django-cms
-django-js-asset==1.2.2
+django-js-asset==2.0.0
     # via django-mptt
-django-mptt==0.12.0
+django-mptt==0.14.0
     # via django-filer
-django-polymorphic==3.0.0
+django-polymorphic==3.1.0
     # via django-filer
-django-sekizai==2.0.0
+django-sekizai==4.0.0
     # via django-cms
-django-storages[boto3]==1.11.1
+django-select2==7.10.1
+    # via djangocms-frontend
+django-storages[boto3]==1.13.1
     # via -r requirements.in
-django-treebeard==4.5.1
+django-treebeard==4.4
     # via
     #   -r requirements.in
     #   django-cms
-djangocms-admin-style==2.0.2
+    #   djangocms-attributes-field
+    #   djangocms-snippet
+djangocms-admin-style==3.2.0
     # via
     #   -r requirements.in
     #   django-cms
-djangocms-attributes-field==2.0.0
+djangocms-attributes-field==2.1.0
     # via
-    #   djangocms-bootstrap4
     #   djangocms-file
+    #   djangocms-frontend
     #   djangocms-icon
-    #   djangocms-link
     #   djangocms-picture
     #   djangocms-style
     #   djangocms-video
-djangocms-bootstrap4==2.0.0
-    # via -r requirements.in
 djangocms-file==3.0.0
+    # via -r requirements.in
+djangocms-frontend[djangocms-icon]==1.0.0
     # via -r requirements.in
 djangocms-googlemap==2.0.0
     # via -r requirements.in
 djangocms-icon==2.0.0
-    # via
-    #   -r requirements.in
-    #   djangocms-bootstrap4
-djangocms-link==3.0.0
-    # via
-    #   -r requirements.in
-    #   djangocms-bootstrap4
-djangocms-picture==3.0.0
-    # via
-    #   -r requirements.in
-    #   djangocms-bootstrap4
-djangocms-snippet==3.0.0
+    # via djangocms-frontend
+djangocms-picture==4.0.0
+    # via -r requirements.in
+djangocms-snippet==3.1.0
     # via -r requirements.in
 djangocms-style==3.0.0
     # via -r requirements.in
-djangocms-text-ckeditor==4.0.0
+djangocms-text-ckeditor==5.1.1
     # via
     #   -r requirements.in
-    #   djangocms-bootstrap4
+    #   djangocms-frontend
 djangocms-transfer==1.0.0
     # via -r requirements.in
 djangocms-video==3.0.0
     # via -r requirements.in
-easy-thumbnails==2.7.1
+easy-thumbnails[svg]==2.8.3
     # via
     #   -r requirements.in
     #   django-filer
     #   djangocms-picture
 html5lib==1.1
     # via djangocms-text-ckeditor
-jmespath==0.10.0
+jmespath==1.0.1
     # via
     #   boto3
     #   botocore
-pep517==0.10.0
-    # via pip-tools
-pillow==8.3.1
+lxml==4.9.1
+    # via svglib
+markupsafe==2.1.1
+    # via werkzeug
+packaging==21.3
+    # via build
+pep517==0.13.0
+    # via build
+pillow==9.2.0
     # via
     #   djangocms-text-ckeditor
     #   easy-thumbnails
-pip-tools==6.2.0
+    #   reportlab
+pip-tools==6.9.0
     # via -r requirements.in
 psycopg2==2.8.6
     # via -r requirements.in
-pycparser==2.20
+pycparser==2.21
     # via cffi
-python-dateutil==2.8.1
+pyparsing==3.0.9
+    # via packaging
+python-dateutil==2.8.2
     # via botocore
-python-dotenv==0.18.0
+python-dotenv==0.21.0
     # via -r requirements.in
-pytz==2021.1
+pytz==2022.5
     # via
     #   -r requirements.in
     #   django
-s3transfer==0.4.2
+reportlab==3.6.11
+    # via
+    #   easy-thumbnails
+    #   svglib
+s3transfer==0.6.0
     # via boto3
 six==1.16.0
     # via
     #   cryptography
     #   html5lib
     #   python-dateutil
-sqlparse==0.4.1
+sqlparse==0.4.3
     # via
     #   django
     #   django-debug-toolbar
-toml==0.10.2
-    # via pep517
+svglib==1.4.1
+    # via easy-thumbnails
+tinycss2==1.2.1
+    # via
+    #   cssselect2
+    #   svglib
+tomli==2.0.1
+    # via
+    #   build
+    #   pep517
 unidecode==1.1.2
     # via django-filer
-urllib3==1.26.6
+urllib3==1.26.12
     # via botocore
 webencodings==0.5.1
-    # via html5lib
-werkzeug==2.0.1
+    # via
+    #   cssselect2
+    #   html5lib
+    #   tinycss2
+werkzeug==2.2.2
     # via -r requirements.in
-wheel==0.36.2
+wheel==0.37.1
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
